@@ -1,0 +1,30 @@
+<html>
+<head>
+
+<script src="js/jquery-1.11.3.min.js"></script>
+
+<script>
+	$(function(){
+		$("#btnLoad").click(function(){
+			$.ajax({
+				url: "http://localhost:8080/HMS2/services/doctor/all",
+				type: "GET",
+				success: function(data){
+					data.doctors.forEach(function(doctor){
+						console.log(doctor.employee.firstname);
+					})
+				},
+				error: function(data){
+					console.log(data);
+				}
+			});
+		});
+	})
+</script>
+
+</head>
+
+<body>
+<button id="btnLoad">Click Me</button>
+</body>
+</html>

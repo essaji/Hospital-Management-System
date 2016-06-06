@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="HMS">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/" source-path="/WebContent/WEB-INF/lib"/>
+        <dependent-module archiveName="mysql-connector-java-5.1.37-bin.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/mysql-connector-java-5.1.37/mysql-connector-java-5.1.37-bin.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/HMS/build/classes"/>
+        <property name="context-root" value="HMS2"/>
+    </wb-module>
+</project-modules>
